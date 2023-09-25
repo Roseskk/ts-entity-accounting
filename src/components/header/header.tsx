@@ -3,7 +3,7 @@ import Navigation from "./navigation";
 
 const Header: React.FC = () => {
     return(
-        <header className={'sticky m-0 '}>
+        <header className={'sticky mt-[10px] shadow '}>
             <Navigation />
         </header>
     )
