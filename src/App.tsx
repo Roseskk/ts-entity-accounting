@@ -10,7 +10,7 @@ function App() {
   const routesController = useRoutes(routes)
   return (
     <MainLayout>
-      <main>{routesController}</main>
+      <main className={'font-primary'}>{routesController}</main>
     </MainLayout>
   );
 }
