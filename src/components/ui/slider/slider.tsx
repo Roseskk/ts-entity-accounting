@@ -65,10 +65,10 @@ export default function ProjectSlider() {
                 return (
                     <animated.div style={{ ...style, position: 'absolute', width: '100%', height: '400px' }}>
                         <Card sx={{ width: '100%', height: 400, position:"relative" }}>
-                            <div style={{ height: '400px', background: `url(${project.image}) center / cover no-repeat` }}></div>
+                            <div style={{ height: '400px', background: `url(${project.image}) center / cover no-repeat`, filter: "brightness(0.5)" }}></div>
                             <CardContent>
-                                <Typography variant="h5" style={{position: "absolute", top:"10px", left:'10px', color: 'black', fontSize: 50, fontFamily: 'Poppins' }}>{project.title}</Typography>
-                                <Typography variant="body2" style={{position: "absolute", top:"100px", left:'10px', color: 'black', fontSize: 30, fontFamily: 'Poppins' }}>
+                                <Typography variant="h5" style={{position: "absolute", top:"10px", left:'10px', color: 'white', fontSize: 50, fontFamily: 'Poppins' }}>{project.title}</Typography>
+                                <Typography variant="body2" style={{position: "absolute", top:"100px", left:'10px', color: 'white', fontSize: 30, fontFamily: 'Poppins' }}>
                                     {project.description}
                                 </Typography>
                             </CardContent>
