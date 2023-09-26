@@ -1,8 +1,10 @@
 {
-  "posts": [
-    { "id": 1, "title": "Hello World" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "team": [
+    { "id": 1, "name": "Олег", "spec": "Front-end", "age": "25",
+      "ico": ""
+    },
+    { "id": 2, "name": "Максим", "spec": "Front-end", "age": "25", "ico":  ""},
+    { "id": 3, "name": "Александер", "spec": "Back-end", "age": "25", "ico":  ""},
+    { "id": 4, "name": "Екатерина", "spec": "Designer", "age": "25", "ico":  ""}
   ]
 }

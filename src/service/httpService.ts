@@ -5,7 +5,7 @@ class HttpService {
 
     constructor() {
         this.axiosInstance = axios.create({
-            baseURL: 'http://localhost:5000', // Базовый URL
+            baseURL: 'http://localhost:5050', // Базовый URL
             timeout: 10000, // Время ожидания в миллисекундах
         });
     }

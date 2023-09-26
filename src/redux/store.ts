@@ -1,11 +1,11 @@
-// store.ts
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import itemReducer from './features/items/item'; // Предположим, что у тебя есть someSlice
+import itemReducer from './features/items/item';
+import teamReducer from './features/team/teamSlice'
 
 export const store = configureStore({
     reducer: {
-        someFeature: itemReducer, // Используй свои редьюсеры
-        // Добавь другие редьюсеры здесь
+        someFeature: itemReducer,
+        team: teamReducer
     },
 });
 

@@ -1,6 +1,6 @@
-import React, { lazy } from 'react';
-
-const Main = lazy(() => import('./pages/main'));
+import React  from 'react';
+import Team from "./pages/team";
+import Main from "./pages/main";
 
 interface Route {
     path: string;
@@ -18,4 +18,12 @@ export const routes: Route[] = [
         display: true,
         title: 'Главная',
     },
+    {
+        path: '/team',
+        breadcrumb: 'Команда',
+        element: <Team />,
+        display: true,
+        title: 'Команда',
+    },
+
 ];

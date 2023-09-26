@@ -15,4 +15,4 @@ function App() {
   );
 }
 
-export default withAppLoader(withRedux(withRouter(App)));
+export default withRedux(withRouter(withAppLoader(App)));
