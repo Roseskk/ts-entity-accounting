@@ -59,7 +59,7 @@ export default function ProjectSlider() {
     };
 
     return (
-        <div className={'!font-secondary'} style={{ position: 'relative', width: '100%', height: '400px' }}>
+        <div className={''} style={{ position: 'relative', width: '100%', height: '400px' }}>
             {transitions((style, item) => {
                 const project = projects[item];
                 return (
