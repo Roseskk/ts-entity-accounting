@@ -4,6 +4,7 @@ import {routes} from "./routes";
 import withRouter from "./hoc/withRouter";
 import withRedux from "./hoc/withRedux";
 import MainLayout from "./layouts/mainLayout";
+import withAppLoader from "./hoc/appLoader";
 
 function App() {
   const routesController = useRoutes(routes)
@@ -14,4 +15,4 @@ function App() {
   );
 }
 
-export default withRedux(withRouter(App));
+export default withAppLoader(withRedux(withRouter(App)));
