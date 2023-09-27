@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import HomeIcon from '@mui/icons-material/Home';
 import {
     Contacts, Image,
-    Login,
+    Login, Web,
 } from "@mui/icons-material";
 
 const Navigation: React.FC = () => {
@@ -18,9 +18,13 @@ const Navigation: React.FC = () => {
                     <Image />
                     <span className={'font-bold'}>Портфолио</span>
                 </NavLink>
-                <NavLink className={'flex gap-[10px] p-[5px]'} to={'/team'}>
+                <NavLink className={'flex gap-[10px] p-[5px]'} to={'/services'}>
+                    <Web />
+                    <span className={'font-bold'}>Услуги</span>
+                </NavLink>
+                <NavLink className={'flex gap-[10px] p-[5px]'} to={'/services'}>
                     <Contacts />
-                    <span className={'font-bold'}>Команда</span>
+                    <span className={'font-bold'}>О нас</span>
                 </NavLink>
                 <div className={'flex gap-[10px] p-[5px]'}>
                     <Login />
